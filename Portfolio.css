@@ -1,4 +1,4 @@
-/* Style général */
+    /* Style général */
 body {
 
     font-family: 'Arial', sans-serif;
@@ -12,6 +12,9 @@ p{
 }
 h2 {
     color: #f8f3f3;
+}
+.mb-3{
+    border: 10px solid #7c7c7c;
 }
 
 #about img {
