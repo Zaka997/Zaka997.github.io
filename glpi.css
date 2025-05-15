@@ -27,7 +27,7 @@ h2 {
 .mb-3{
   border: 2px solid #8f8b8b;      /* bordure noire */
   padding: 15px;               /* espace autour du texte */
-  width: fit-content;          /* ajuste la largeur au texte */
+  width: 400px;          /* ajuste la largeur au texte */
   margin: 20px auto;           /* centre horizontalement */
   border-radius: 8px;          /* coins arrondis */
   background-color: #f9f9f9;   /* fond doux */
