@@ -23,6 +23,16 @@ h2 {
     border-radius: 10px;
 }
 */
+.mb-3{
+  border: 2px solid #8f8b8b;      /* bordure noire */
+  padding: 15px;               /* espace autour du texte */
+  width: fit-content;          /* ajuste la largeur au texte */
+  margin: 20px auto;           /* centre horizontalement */
+  border-radius: 8px;          /* coins arrondis */
+  background-color: #f9f9f9;   /* fond doux */
+  text-align: center;          /* texte centré */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
+}
 
 /*h5.blocktext{
 
