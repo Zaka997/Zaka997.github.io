@@ -15,7 +15,8 @@ h2 {
 }
 .mb-3{
     border: 5px solid #7c7c7c;
-    width: "30%";
+    /*width: "30%";*/
+    /*height: "30%";*/
 }
 
 #about img {
