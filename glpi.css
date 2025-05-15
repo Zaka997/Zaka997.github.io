@@ -15,7 +15,7 @@ h2 {
 }
 .mb-3{
     position: center;
-     width: 55%;              /* "long" : 80% de la largeur de l'écran */
+    width: 55%;              /* "long" : 80% de la largeur de l'écran */
     max-width: 1200px;       /* limite pour très grands écrans */
     background-color: white;
     padding: 20px;
