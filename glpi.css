@@ -23,6 +23,15 @@ h2 {
     border-radius: 10px;
 }   
 
+.conteiner{  
+    text-align: center;
+    width: 55%;              /* "long" : 55% de la largeur de l'écran */
+    max-width: 1200px;       /* limite pour très grands écrans */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
 /*h5.blocktext{
 
 }*/
