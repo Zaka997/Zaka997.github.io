@@ -43,3 +43,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.custom-navbar {
+    background-image: url('image/info.jpg'); /* Réutilise ton image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Pour rendre le texte visible sur l'image */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: white !important;
+}
