@@ -44,29 +44,31 @@ footer {
     width: 100%;
 }
 
-.custom-navbar {
-    background-image: url('image/info.jpg'); /* Réutilise ton image de fond */
+/* Image de fond sur toute la page, y compris la navbar */
+body {
+    background-image: url('image/info.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background-attachment: fixed; /* permet de scroller sur une image fixe */
+    margin: 0;
 }
 
-/* Pour rendre le texte visible sur l'image */
+/* Navbar avec fond semi-transparent */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* fond sombre mais transparent */
+}
+
+/* Texte de la navbar en blanc */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
     color: white !important;
 }
-.custom-navbar::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* assombrit légèrement le fond */
-    z-index: 0;
-}
 
-.custom-navbar * {
-    position: relative;
-    z-index: 1;
+/* Optionnel : rendre le texte de la navbar actif visible */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
