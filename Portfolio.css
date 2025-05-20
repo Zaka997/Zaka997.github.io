@@ -14,7 +14,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-attachment: fixed; /* permet de scroller sur une image fixe */
     margin: 0;
-    height: 100%;/* hauteur de la page */
+    height: 1000px;/* hauteur de la page */
     color: #f4f4f9; /* couleur du texte */
 }
 
