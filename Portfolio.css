@@ -1,11 +1,21 @@
-    /* Style général */
+    /* Style général 
 body {
     background-image: url(image/info.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
     background-color: #7c7c7d;
+}*/
+body {
+    background-image: url('image/info.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-attachment: fixed; /* permet de scroller sur une image fixe */
+    margin: 0;
 }
+
 a{
     color: black;
 }
@@ -26,7 +36,9 @@ h2 {
   text-align: center;          /* texte centré */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
 }
-
+.mb-5{
+    height: 70%;
+}
 
 #about img {
     max-width: 100%;
@@ -45,15 +57,7 @@ footer {
 }
 
 /* Image de fond sur toute la page, y compris la navbar */
-body {
-    background-image: url('image/info.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;
-    background-attachment: fixed; /* permet de scroller sur une image fixe */
-    margin: 0;
-}
+
 
 /* Navbar avec fond semi-transparent */
 .custom-navbar {
