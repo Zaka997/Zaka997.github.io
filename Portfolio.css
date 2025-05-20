@@ -21,7 +21,7 @@ body {
 
 .transparent-section {
     background-color: rgba(255, 255, 255, 0); /* fond complètement transparent */
-     /* texte blanc ou ajusté selon ton fond */
+    color: white;    /* texte blanc ou ajusté selon ton fond */
 }
 
 
@@ -37,6 +37,7 @@ h2 {
 
 .mb-3{
   border: 2px solid #8f8b8b;      /* bordure noire */
+  background-color: rgba(255, 255, 255, 0.1); /* léger fond transparent */
   padding: 15px;               /* espace autour du texte */
   width: 500px;          /* ajuste la largeur au texte */
   margin: 20px auto;           /* centre horizontalement */
