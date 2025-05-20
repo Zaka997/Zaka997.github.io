@@ -19,10 +19,11 @@ body {
     color: #f4f4f9; /* couleur du texte */
 }
 
-.my-5 {
-    
-    background-color: transparent; /* fond transparent */
+.transparent-section {
+    background-color: rgba(255, 255, 255, 0); /* fond complètement transparent */
+     /* texte blanc ou ajusté selon ton fond */
 }
+
 
 a{
     color: black;
