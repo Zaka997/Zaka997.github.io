@@ -6,9 +6,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #7c7c7d;
 }*/
-html, body {
-    height: 100%;
-}
+
 body {
     background-image: url('image/info.jpg');
     background-size: cover;
@@ -17,10 +15,11 @@ body {
     font-family: 'Arial', sans-serif;
     background-attachment: fixed; /* permet de scroller sur une image fixe */
     margin: 0;
+    height: 100%;
     color: #f4f4f9; /* couleur du texte */
 }
 
-.containermy-5 {
+.my-5 {
     
     background-color: transparent; /* fond transparent */
 }
