@@ -28,6 +28,7 @@ body {
 
 a{
     color: black;
+    text-decoration: none;
 }
 p{
     color: #f4f4f9;
