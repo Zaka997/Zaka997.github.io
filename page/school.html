@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Mon Portfolio</a>
+            <a class="navbar-brand" href="#"><img src="image/portfolio.png" width="35", height="35">Mon Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Accueil</a>
+                        <a class="nav-link" href="#about">Accueil</a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="school.html">Parcours scolaire</a>
+                        <a class="nav-link" href="page/school.html">Parcours scolaire</a>
 
                     <li class="nav-item">      
-                        <a class="nav-link" href="GLPI_projet.html">Situation Professionnelles</a>
+                        <a class="nav-link" href="page/situation_pro.html">Situation Professionnelles</a>
                       
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#explication">À propos de moi </a>
@@ -43,27 +43,29 @@
     </nav>
 
 
-    <!-- À propos -->
+     <!--À propos-->
     <section id="about" class="container my-5">
         <div class="row">
             <div class="col-lg-6">
                 <h2><strong>Zakaria Nessar</strong></h2>
-                <p>Je suis un étudiant passionné en informatique, je suis en BTS SIO option SLAM
-                  J'aspire a devenir un Softwer ingenieur  .</p>
+                <p >Je suis un étudiant passionné en informatique, je suis en BTS SIO option SLAM
+                  J'aspire a devenir un Softwer ingenieur </p>
             </div>
             <div class="col-lg-4">
-                <img src="../image/info.jpg" alt="Mon Image" class="img-fluid rounded-circle"style="opacity: 0.1;">
-            </div>
+                <img src="image/info.jpg" alt="Mon Image" class="img-fluid rounded-circle" style="opacity: 0.1;">
+            </div>      
         </div>
     </section>
 
-<section id="about" class="container my-5 transparent-section" >
+    <!--Parcours Scolaire a mettre en heut de l'image-->
+    <section id="about" class="container my-5 transparent-section" >
         <!--<h2 class="text-center">Mes Situation Professionnlles</h2>-->
         <div class="row">
             <!-- Lire la Suite -->
             <div class="col-md-2">
                 <div class="card">
                   <a href="#explications"><strong>Lire la Suite</strong></a>         
+                   <!--<img src="image/veepe.png" class="card-img-top" alt="Projet 2">--> 
                 </div>
             </div>
         </div>
@@ -84,22 +86,11 @@
     <!-- Contact mettre Linkedin mail-->
     <section id="contact" class="bg-light py-5">
         <div class="container">
-           <strong> <h2 style="color: black;" class="text-center">Contactez-moi</h2></strong>
+           <strong> <h2 style="color: black;" class="text-center">Contactez-moi sur :</h2></strong>
             <form id="contact-form" action="send-message.php" method="POST">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                    <label for="name" class="form-label"><a href="https://www.linkedin.com/in/zakaria-nessar-4a7583329?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuzFvVlfEQnGtWiV0uic7hA%3D%3D" target="_blank"><img src="image/linkdin.png" class="card-img-top" alt="Projet 2">Mon Profil Linkdin:</a> </label>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Votre email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-                <button type="reset" class="btn btn-primary">Reset</button>
             </form>
         </div>
     </section>
