@@ -40,7 +40,6 @@ h2 {
   width: 500px;          /* ajuste la largeur au texte */
   margin: 20px auto;           /* centre horizontalement */
   border-radius: 8px;          /* coins arrondis */
-  background-color: transparent;   /* fond doux */
   text-align: center;          /* texte centré */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
 }
