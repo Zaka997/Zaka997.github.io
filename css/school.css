@@ -9,7 +9,7 @@ body {
 
 body {
     background-image: url('../image/university.webp');
-    background-size: 1200px 1000px; /* Ajuste la taille de l'image de fond */
+    background-size: 1300px 850px; /* Ajuste la taille de l'image de fond */
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
@@ -17,6 +17,26 @@ body {
     margin: 0;
     height: 100%;
     color: #f4f4f9; /* couleur du texte */
+}
+
+/* Image de fond sur toute la page, y compris la navbar */
+
+
+/* Navbar avec fond semi-transparent */
+.custom-navbar {
+    background-color: rgba(169, 200, 254, 0.3); /* fond sombre mais transparent */
+}
+
+/* Texte de la navbar en blanc */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Optionnel : rendre le texte de la navbar actif visible */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -62,23 +82,14 @@ footer {
     width: 100%;
 }
 
-/* Image de fond sur toute la page, y compris la navbar */
-
-
-/* Navbar avec fond semi-transparent */
-.custom-navbar {
-    background-color: rgba(169, 200, 254, 0.3); /* fond sombre mais transparent */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
 }
-
-/* Texte de la navbar en blanc */
-.custom-navbar .nav-link,
-.custom-navbar .navbar-brand {
-    color: white !important;
-}
-
-/* Optionnel : rendre le texte de la navbar actif visible */
-.custom-navbar .nav-link.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
