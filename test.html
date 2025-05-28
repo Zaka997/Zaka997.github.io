@@ -153,3 +153,58 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Overlay sur Image -->
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay sur Image</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://via.placeholder.com/300x200" alt="Image" class="image">
+  <div class="overlay">Texte en survol</div>
+</div>
+
+</body>
+</html>
