@@ -80,6 +80,11 @@ footer {
     width: 100%;
 }
 
+.overlay-slide-card .position-relative {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -88,29 +93,28 @@ footer {
   height: 100%;
   background-color: rgba(0, 140, 186, 0.8);
   color: white;
-  transform: translateX(100%); /* Start off-screen right */
-  transition: transform 0.6s ease-in-out;
   z-index: 1;
+  transition: transform 0.6s ease-in-out;
 }
+
+/* Slide de droite vers gauche */
+.slide-left {
+  transform: translateX(100%);
+}
+
+/* Slide de gauche vers droite */
+.slide-right {
+  transform: translateX(-100%);
+}
+
+/* Hover : ramène l'overlay visible */
+.overlay-slide-card:hover .slide-left,
+.overlay-slide-card:hover .slide-right {
+  transform: translateX(0);
+}
+
 .overlay-text p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.4;
-}
-.overlay-slide-card .position-relative {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay-slide-card:hover .overlay.slide-left {
-  transform: translateX(0); /* Slide in from right to left */
-}
-
-.overlay-slide-card:hover .overlay.slide-right {
-  transform: translateX(0); /* Slide in from left to right */
-}
-
-/* Pour slide de gauche vers la droite */
-.slide-right {
-  transform: translateX(-100%);
 }
