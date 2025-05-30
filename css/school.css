@@ -39,7 +39,11 @@ body {
     text-decoration: underline;
 }
 
-
+#about {
+    background-color: rgba(0, 0, 0, 0.3); /* rend le texte plus lisible sur fond clair */
+    border-radius: 12px;
+    color: white;
+}
 
 a{
     color: black;
