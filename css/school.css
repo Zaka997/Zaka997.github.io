@@ -57,16 +57,53 @@ h2 {
     color: #f8f3f3;
 }
 
-.mb-3{
-  border: 2px solid #8f8b8b;      /* bordure noire */
-  background-color: rgba(255, 255, 255, 0.1); /* fond transparent */
-  padding: 15px;               /* espace autour du texte */
-  width: 500px;          /* ajuste la largeur au texte */
-  margin: 20px auto;           /* centre horizontalement */
-  border-radius: 8px;          /* coins arrondis */
-  background-color: transparent;   /* fond doux */
-  text-align: center;          /* texte centré */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
+.custom-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* fond sombre */
+  color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity 0.4s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 
