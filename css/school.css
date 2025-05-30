@@ -16,7 +16,7 @@ body {
     background-attachment: fixed; /* permet de scroller sur une image fixe */
     margin: 0;
     height: 100%;
-    color: #f70495; /* couleur du texte */
+    color: #2a088e1b; /* couleur du texte */
 }
 
 /* Image de fond sur toute la page, y compris la navbar */
