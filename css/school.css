@@ -40,11 +40,6 @@ body {
 }
 
 
-.transparent-section {
-    background-color: rgba(255, 255, 255, 0); /* fond complètement transparent */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* ombre légère */
-    color: white;
-}
 
 a{
     color: black;
@@ -85,4 +80,9 @@ footer {
   width: 0;
   height: 100%;
   transition: .5s ease;
+}
+.overlay-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
