@@ -100,3 +100,11 @@ footer {
   position: relative;
   overflow: hidden;
 }
+.overlay-slide-card:hover .overlay.slide-right {
+  transform: translateX(0); /* Slide in from left to right */
+}
+
+/* Pour slide de gauche vers la droite */
+.slide-right {
+  transform: translateX(-100%);
+}
