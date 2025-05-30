@@ -9,7 +9,7 @@ body {
 
 body {
     background-image: url('../image/university.webp');
-    background-size: 1300px 800px; /* Ajuste la taille de l'image de fond */
+    background-size: cover; /* Ajuste la taille de l'image de fond 1300px 800px*/
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
