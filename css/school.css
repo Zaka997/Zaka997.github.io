@@ -40,7 +40,7 @@ body {
 }
 
 #about {
-    background-color: rgba(255, 255, 255, 0.3); /* rend le texte plus lisible sur fond clair */
+    background-color: rgba(0, 0, 0, 0.3); /* rend le texte plus lisible sur fond clair */
     border-radius: 12px;
     color: rgb(0, 0, 0);
 }
@@ -56,10 +56,10 @@ a{
     text-decoration: none;
 }
 p{
-    color: #f4f4f9;
+    color: #000000;
 }
 h2 {
-    color: #f8f3f3;
+    color: #000000;
 }
 
 
