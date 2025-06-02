@@ -53,7 +53,7 @@ body {
 
 .py-9 {
   padding-top: 850px; /* espace en haut   */
-  padding: bottom 850px; ;/* espace en bas   */
+  padding-bottom: 850px; /* espace en bas   */
 }
 
 a{
