@@ -30,7 +30,7 @@ body {
 /* Texte de la navbar en blanc */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 /* Optionnel : rendre le texte de la navbar actif visible */
@@ -40,7 +40,7 @@ body {
 }
 
 #about {
-    background-color: rgba(255, 255, 255, 0); /* rend le texte plus lisible sur fond clair */
+    background-color: rgba(255, 255, 255, 0.3); /* rend le texte plus lisible sur fond clair */
     border-radius: 12px;
     color: rgb(0, 0, 0);
 }
