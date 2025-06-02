@@ -50,6 +50,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
 a{
     color: black;
