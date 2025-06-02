@@ -52,8 +52,8 @@ body {
 }
 
 .py-9 {
-  padding-top: 9rem; /* espace en haut 144 px */
-  padding-bottom: 9rem;/* espace en bas 144 px */
+  padding-top: 850px; /* espace en haut   */
+  padding: bottom 850px; ;/* espace en bas   */
 }
 
 a{
