@@ -40,7 +40,7 @@ body {
 }
 
 #about {
-    background-color: rgba(0, 0, 0, 0.3); /* rend le texte plus lisible sur fond clair */
+    background-color: rgba(0, 0, 0, 0.2); /* rend le texte plus lisible sur fond clair */
     border-radius: 12px;
     min-height: 100vh; /* occupe toute la hauteur de la fenêtre */
     width: 100vw;/* occupe toute la largeur de la fenêtre */
