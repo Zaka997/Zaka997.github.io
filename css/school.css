@@ -51,9 +51,9 @@ body {
   margin-bottom: 5rem;
 }
 
-.py-7 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-9 {
+  padding-top: 9rem; /* espace en haut 144 px */
+  padding-bottom: 9rem;/* espace en bas 144 px */
 }
 
 a{
