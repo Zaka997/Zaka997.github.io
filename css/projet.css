@@ -8,8 +8,8 @@ body {
 }*/
 
 body {
-    background-image: url('../image/work.jpg'); /* Chemin vers l'image de fond */
-    background-size: cover; /* Ajuste la taille de l'image de fond */
+    background-image: url('../image/work.jpg');
+    background-size: contain; /* Ajuste la taille de l'image de fond */
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
