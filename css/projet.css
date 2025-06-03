@@ -19,10 +19,21 @@ body {
     color: #f4f4f9; /* couleur du texte */
 }
 
-.transparent-section {
-    background-color: rgba(255, 255, 255, 0); /* fond complètement transparent */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* ombre légère */
-    color: white;
+/* Navbar avec fond semi-transparent */
+.custom-navbar {
+    background-color: rgba(150, 121, 105 ,0.3); /* fond sombre mais transparent */
+}
+
+/* Texte de la navbar en blanc */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Optionnel : rendre le texte de la navbar actif visible */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
