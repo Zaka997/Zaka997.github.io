@@ -44,7 +44,9 @@ body {
     border-radius: 12px;
     min-height: 100vh; /* occupe toute la hauteur de la fenêtre */
     width: 100vw;/* occupe toute la largeur de la fenêtre */
-}
+    padding: 2rem; /* espace autour du contenu */
+    margin: 0; /* centre le contenu */
+  }
 
 .my-7 {
   margin-top: 5rem;
