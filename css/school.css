@@ -30,7 +30,7 @@ body {
 /* Texte de la navbar en noir */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 /* Optionnel : rendre le texte de la navbar actif visible */
