@@ -27,7 +27,7 @@ body {
     background-color: rgba(169, 200, 254, 0.2); /* fond sombre mais transparent */
 }
 
-/* Texte de la navbar en blanc */
+/* Texte de la navbar en noir */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
     color: rgb(0, 0, 0) !important;
