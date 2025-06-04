@@ -42,7 +42,7 @@ a{
     text-decoration: none;
 }
 p{
-    color: #f4f4f9;
+    color: #483929;
 }
 h2 {
     color: #f8f3f3;
@@ -102,7 +102,7 @@ footer {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    background-color: rgb(91, 66, 53); /* Fond blanc avec transparence */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
     margin-bottom: 20px; /* Espace entre les cartes */
