@@ -143,3 +143,15 @@ footer {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espace entre les cartes */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    transition: transform 0.3s ease; /* Transition douce */
+}
