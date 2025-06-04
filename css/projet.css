@@ -89,10 +89,10 @@ footer {
 .custom-navbar .nav-link,
 .custom-navbar .nav-link:hover,
 .custom-navbar .navbar-brand {
-    color: white !important;
+    color: #ffd700 !important;
     transform: translateY(-5px); /* Légère élévation au survol */
     text-decoration: underline; /* Soulignement au survol */
-    transition: transform 0.3s ease; /* Transition douce */
+    transition: color 0.3s ease, text-decoration 0.3 ease; /* Transition douce */
 }
 
 /* Optionnel : rendre le texte de la navbar actif visible */
