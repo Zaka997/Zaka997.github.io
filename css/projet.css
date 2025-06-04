@@ -87,8 +87,12 @@ footer {
 
 /* Texte de la navbar en blanc */
 .custom-navbar .nav-link,
+.custom-navbar .nav-link:hover,
 .custom-navbar .navbar-brand {
     color: white !important;
+    transform: translateY(-5px); /* Légère élévation au survol */
+    text-decoration: underline; /* Soulignement au survol */
+    transition: transform 0.3s ease; /* Transition douce */
 }
 
 /* Optionnel : rendre le texte de la navbar actif visible */
@@ -102,6 +106,12 @@ footer {
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
     margin-bottom: 20px; /* Espace entre les cartes */
+}
+
+.card-header {
+    background-color: #8a6754; /* exemple : marron doux */
+    color: white;
+    font-weight: bold;
 }
 
 .card:hover {
