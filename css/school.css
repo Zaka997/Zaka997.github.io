@@ -27,18 +27,26 @@ body {
     background-color: rgba(7, 36, 86, 0.2); /* fond sombre mais transparent */
 }
 
-/* Texte de la navbar en noir */
+/* Liens de navbar */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-    color: rgb(255, 255, 255) !important;
+    color: #edc9b5 !important;
+    transition: all 0.3s ease;
 }
 
-/* Optionnel : rendre le texte de la navbar actif visible */
+/* Effet au survol */
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+/* Lien actif */
 .custom-navbar .nav-link.active {
     font-weight: bold;
     text-decoration: underline;
 }
-
 #about {
   background-color: rgba(0, 0, 0, 0.2); /* rend le texte plus lisible sur fond clair */
   height: 100vh;
@@ -145,7 +153,7 @@ footer {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    background-color: rgba(7, 36, 86, 0.2); /* Fond bleu avec transparence */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
     margin-bottom: 20px; /* Espace entre les cartes */
