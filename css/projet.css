@@ -42,7 +42,7 @@ a{
     text-decoration: none;
 }
 p{
-    color: #483929;
+    color: #f4f4f4;
 }
 h2 {
     color: #f8f3f3;
@@ -89,7 +89,7 @@ footer {
 .custom-navbar .nav-link,
 .custom-navbar .nav-link:hover,
 .custom-navbar .navbar-brand {
-    color: #ffd700 !important;
+    color: #edc9b5 !important;
     transform: translateY(-5px); /* Légère élévation au survol */
     text-decoration: underline; /* Soulignement au survol */
     transition: color 0.3s ease, text-decoration 0.3 ease; /* Transition douce */
