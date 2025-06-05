@@ -26,15 +26,23 @@ body {
 }
 
 
-a{
-    color: black;
-    text-decoration: none;
+h2, p {
+  color: #ffffff;
 }
-p{
-    color: #f4f4f9;
+
+a {
+  color: black;
+  text-decoration: none;
 }
-h2 {
-    color: #f8f3f3;
+
+
+a.btn {
+  border: 1px solid white;
+  color: white;
+}
+a.btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .mb-3{
@@ -74,13 +82,22 @@ footer {
     background-color: rgba(0, 0, 0, 0.6); /* fond sombre mais transparent */
 }
 
-/* Texte de la navbar en blanc */
+/* Liens de navbar */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-    color: white !important;
+    color: #edc9b5 !important;
+    transition: all 0.3s ease;
 }
 
-/* Optionnel : rendre le texte de la navbar actif visible */
+/* Effet au survol */
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+/* Lien actif */
 .custom-navbar .nav-link.active {
     font-weight: bold;
     text-decoration: underline;
