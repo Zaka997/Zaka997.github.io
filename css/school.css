@@ -132,6 +132,7 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Slide depuis la droite */
