@@ -91,6 +91,10 @@ h2 {
     object-fit: cover;
 }
 
+.card-title {
+    color: #ffffff; /* Couleur du titre de la carte */
+}
+
 /* Style footer */
 footer {
     position: relative;
