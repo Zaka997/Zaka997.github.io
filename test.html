@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/bts.css">
     <link rel="shortcut icon" type="image/png" href="image/portfolio.png"/>
 
 </head>
@@ -45,16 +45,7 @@
 
      <!--À propos-->
     <section id="about" class="container my-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2><strong>Zakaria Nessar</strong></h2>
-                <p >Je suis un étudiant passionné en informatique, je suis en BTS SIO option SLAM
-                  J'aspire a devenir un Softwer ingenieur </p>
-            </div>
-
-<!--Parcours Scolaire a mettre en heut de l'image-->
-    <section id="about" class="container my-5 transparent-section" >
-       <div class="container my-5">
+        <div class="container my-5">
   <div class="row">
     
     <!-- Carte 1 : Option SLAM -->
@@ -116,142 +107,6 @@
 
   </div>
 </div>
-    </section>
-            
-            <div class="col-lg-4">
-                <img src="image/info.jpg" alt="Mon Image" class="img-fluid rounded-circle">
-            </div>
-        </div>
-    </section>
-
-    <!--Parcours Scolaire a mettre en heut de l'image-->
-    <section id="about" class="container my-5 transparent-section" >
-        <!--<h2 class="text-center">Mes Situation Professionnlles</h2>-->
-        <div class="row">
-            <div class="col-md-2 transparent-section">
-                <div class="card">
-                    <a href="page/school.html" ><strong>Parcours Scolaire</strong></a>
-                </div>
-            </div>
-            <!-- Lire la Suite -->
-            <div class="col-md-2">
-                <div class="card">
-                  <a href="#about"><strong>Lire la Suite</strong></a>         
-                   <!--<img src="image/veepe.png" class="card-img-top" alt="Projet 2">--> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Explications about me -->
-
-<section id="explications" class="bg-light py-5">
-        <!--conteiner Contexte-->
-        <div class="container" >
-            <strong><h2 style= "color: black;" class="text-center">À propos de moi</h2></strong>         
-                <div class="mb-3">
-                    <h5 style= "color: black;" class="text-center">En tant qu'étudiant en première année de BTS SIO option SLAM,
-                        j'ai appris des langauge de programmation pour front-end (HTML,CSS,JS,Bootstrap) et back-end(PHP, C#, Python, SQL).</h5>
-                </div>
-        </div>  
-
-    <!-- Contact mettre Linkedin mail-->
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-           <strong> <h2 style="color: black;" class="text-center">Contactez-moi sur :</h2></strong>
-            <form id="contact-form" action="send-message.php" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label"><a href="https://www.linkedin.com/in/zakaria-nessar-4a7583329?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuzFvVlfEQnGtWiV0uic7hA%3D%3D" target="_blank"><img src="image/linkdin.png" class="card-img-top" alt="Projet 2">Mon Profil Linkdin:</a> </label>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-
-</html>
-
-
-<!-- Situation Pro -->
-    <section id="portfolio" class="container my-5">
-        <h2 class="text-center">Mon Parcours Scolaire :</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="../image/glpi.png" class="card-img-top" alt="Projet 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Bac</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">BAC+1</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Overlay sur Image -->
-    <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Overlay sur Image</title>
-  <style>
-    .container {
-      position: relative;
-      width: 300px;
-      height: 200px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .image {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente */
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .container:hover .overlay {
-      opacity: 1;
-    }
-  </style>
 </head>
 <body>
 
-<div class="container">
-  <img src="https://via.placeholder.com/300x200" alt="Image" class="image">
-  <div class="overlay">Texte en survol</div>
-</div>
-
-</body>
-</html>
