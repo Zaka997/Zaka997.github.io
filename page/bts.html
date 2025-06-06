@@ -39,57 +39,72 @@
 
     <!-- À propos -->
     <section id="about" class="container my-5">
-      <div class="row">
-            <div class="col-lg-6">
-                <h2><strong>Decouvrir le BTS SIO</strong></h2>
-                <p>Le BTS Services Informatiques aux Organisations (SIO) est une formation polyvalente qui<br>
-                  prépare les étudiants aux métiers de l'informatique en entreprise ou dans des organismes publics.</p>
-            </div>
-            <div class="container my-5">
-              <div class="row">
+    <div class="row">
 
-                <!-- Premiére card pour SLAM -->
-                <div class="col-md-6 mb-4"><!--divise en deux le conteiner-->
-                  <div class="card">
-                    <!--Mettre un effet d'ombre plus arrondire les bords-->
-                      <h3 class="card-header">Option SLAM</h3>
-                        <div class="col-lg-6">
-                          <img src="../image/sio.png" alt="Mon Image" class="img-fluid rounded-circle"><p><strong>Option SLAM</strong></p>
-                        </div>
-                    <div class="card-body">
-                      <h5 class="card-text">GLPI simplifie la gestion informatique. Suivi des actifs, gestion des tickets, inventaires simples. Open-source, convivial, optimisez la productivité dès l'installation.</h5>
-                    </div> 
-                  </div>
-                </div>
+    <!--Carte 1 : Option SLAM -->
+    <div class="col-md-6 mb-4">
+        
+        <!-- Titre centré de la carte -->
+        <h3 class="card-header text-center">Option SLAM</h3>
 
+        <!-- Contenu de la carte en 2 colonnes (image + texte) -->
+        <div class="row g-0 align-items-center">
+          
+          <!--Colonne image -->
+          <div class="col-4 text-center">
+            <img src="../image/sio.png"
+                 class="img-fluid rounded-start my-3"
+                 style="max-height:180px;"> <!-- Taille limite de l’image -->
+          </div>
 
-                <!-- Deuxiéme card pour SISR -->
-                <div class="col-md-6 mb-4">
-                  <div class="card">
-                    <!--Mettre un effet d'ombre plus arrondire les bords-->
-                      <h3 class="card-header">Option SISR</h3>
-                        <div class="col-lg-6">
-                          <img src="../image/sio.png" alt="Mon Image" class="img-fluid rounded-circle"><p><strong>Option SISR</strong></p>
-                        </div>
-                    <div class="card-body">
-                      <h5 class="card-text">ici ta juste du texte inutile que tu va enlever parce que tu veux un flip !!!!</h5>
-                    </div>
-                  </div>
-                </div>
-                
+          <!--Colonne texte -->
+          <div class="col-8">
+            <div class="card-body">
+              <p class="card-text">
+                Option SLAM (Solutions Logicielles et Applications Métiers) :
+              </p>
             </div>
-            <div class="col-lg-6">
-                <div style="height: 750px;"></div>
-            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- cards de mes projets  -->
+    <!--Carte 2 : Option SISR (exemple) -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        
+        <!-- Titre centré -->
+        <h3 class="card-header text-center">Option SISR</h3>
 
+        <!-- Contenu en deux colonnes -->
+        <div class="row g-0 align-items-center">
+
+          <!--olonne image -->
+          <div class="col-4 text-center">
+            <img src="../image/sio.png"
+                 class="img-fluid rounded-start my-3"
+                 style="max-height:180px;">
+          </div>
+
+          <!--Colonne texte -->
+          <div class="col-8">
+            <div class="card-body">
+              <p class="card-text">
+                L’option SISR (Services Informatiques aux Systèmes et Réseaux)
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Fin de .row -->
+  </section>
+
+    
 <section id="explications" class="bg-light py-5" >
-  
-</section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
