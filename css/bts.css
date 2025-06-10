@@ -103,10 +103,10 @@ footer {
 }
 
 .flip-card {
-  background-color: red;
-  width: 100%;
-  height: 100%;
-  perspective: 1000px; /* Permet l’effet 3D */
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -116,7 +116,7 @@ footer {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -127,29 +127,21 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .flip-card-front {
-  /* Style face avant */
-  background-color: rgba(7, 36, 86, 0.7); /* ton bleu transparent */
-  color: white;
-  z-index: 2;
+  background-color: #bbb;
+  color: black;
 }
 
 .flip-card-back {
-  /* Style face arrière */
-  background-color: #2a2a72;
+  background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 .card {
     background-color: rgba(7, 36, 86, 0.7); /* Fond bleu avec transparence */
     border-radius: 10px; /* Coins arrondis */
@@ -158,7 +150,7 @@ footer {
 
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Légère élévation au survol */
-    transition: transform 0.3s ease; /* Transition douce */
-}
+/* .card:hover {
+    transform: translateY(-5px); Légère élévation au survol 
+    transition: transform 0.3s ease;  Transition douce 
+}*/
