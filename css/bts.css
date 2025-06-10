@@ -103,44 +103,42 @@ footer {
 }
 
 .flip-card {
-  background-color: transparent;
+  perspective: 1000px;
   width: 100%;
-  height: 100%;
-  perspective: 1000px; /* Perspective pour l'effet de retournement */
+  height: 250px; /* ou h-100 si parent a hauteur */
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
-  transition: transform 0.6s; /* Durée de la transition */
-  transform-style: preserve-3d; /* Préserve la perspective */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); /* Rotation de 180 degrés au survol */
-
+  transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
   transform: rotateY(180deg);
+  background-color: rgba(7, 36, 86, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
+
 .card {
     background-color: rgba(7, 36, 86, 0.7); /* Fond bleu avec transparence */
     border-radius: 10px; /* Coins arrondis */
