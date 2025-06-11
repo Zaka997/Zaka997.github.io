@@ -84,3 +84,91 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carte avec Popup</title>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .card {
+      width: 200px;
+      height: 150px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin: 50px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ======= CARTE CLIQUABLE ======= -->
+<div class="card" id="openCard">
+  <h3>Carte SLAM</h3>
+  <p>Cliquez pour en savoir plus</p>
+</div>
+
+<!-- ======= POPUP / MODAL ======= -->
+<div id="modalCard" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>SLAM - Solutions Logicielles</h2>
+    <p>Ici, on développe des applis métiers, sites web, etc.</p>
+  </div>
+</div>
+
+<!-- SCRIPT JS -->
+<script>
+  const modal = document.getElementById("modalCard");
+  const card = document.getElementById("openCard");
+  const closeBtn = document.querySelector(".close");
+
+  card.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
