@@ -57,18 +57,34 @@ h2 {
     color: #f8f3f3;
 }
 
-.mb-3{
-  border: 2px solid #8f8b8b;      /* bordure noire */
-  background-color: rgba(255, 255, 255, 0.1); /* fond transparent */
-  padding: 15px;               /* espace autour du texte */
-  width: 500px;          /* ajuste la largeur au texte */
-  margin: 20px auto;           /* centre horizontalement */
-  border-radius: 8px;          /* coins arrondis */
-  background-color: transparent;   /* fond doux */
-  text-align: center;          /* texte centré */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
+.modal{
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour la modale */
+    
+   
+    max-width: 900px; /* Largeur maximale de la modale */
+    margin: auto; /* Centre la modale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour la modale */
+    position: relative; /* Nécessaire pour le positionnement de l'icône de fermeture */
+    top: 50%; /* Positionne la modale au milieu de l'écran */
+    transform: translateY(-50%); /* Centre la modale verticalement */
+    z-index: 1050; /* Assure que la modale est au-dessus des autres éléments */
+    width: 90%; /* Largeur responsive */
+    display : none; 
 }
 
+modal.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond claire pour le contenu de la modale */
+    color: #9191f9; /* Couleur du texte dans le contenu de la modale */
+    padding: 20px; /* Espace intérieur pour le contenu de la modale */
+    border-radius: 10px; /* Coins arrondis pour le contenu de la modale */
+}
+
+.close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+}
 
 #about img {
     max-width: 100%;
@@ -105,3 +121,15 @@ footer {
     transform: translateY(-5px); /* Légère élévation au survol */
     transition: transform 0.3s ease; /* Transition douce */
 }
+
+/*.mb-3{
+  border: 2px solid #8f8b8b;       bordure noire 
+  background-color: rgba(255, 255, 255, 0.1); /* fond transparent 
+  padding: 15px;               /* espace autour du texte 
+  width: 500px;          /* ajuste la largeur au texte 
+  margin: 20px auto;           /* centre horizontalement 
+  border-radius: 8px;          /* coins arrondis 
+  background-color: transparent;   /* fond doux
+  text-align: center;          /* texte centré 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère 
+}*/
