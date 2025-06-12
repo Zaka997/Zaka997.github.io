@@ -60,34 +60,42 @@ h2 {
     color: #f8f3f3;
 }
 
-.custom-modal{
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour la modale */
-    
-   
-    max-width: 900px; /* Largeur maximale de la modale */
-    margin: auto; /* Centre la modale */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour la modale */
-    position: relative; /* Nécessaire pour le positionnement de l'icône de fermeture */
-    top: 50%; /* Positionne la modale au milieu de l'écran */
-    transform: translateY(-50%); /* Centre la modale verticalement */
-    z-index: 1050; /* Assure que la modale est au-dessus des autres éléments */
-    width: 90%; /* Largeur responsive */
-    display : none; 
+.custom-modal { 
+    display: none;/* Masqué par défaut */
+    position: fixed;/* Reste en place */
+    z-index: 1050;/* Au-dessus de tout le reste */
+    left: 0;/* À gauche de l'écran */
+top: 0;/* En haut de l'écran */
+    width: 100vw;/* Prend toute la largeur de l'écran */
+    height: 100vh;  /* Prend toute la hauteur de l'écran */
+background-color: rgba(0, 0, 0, 0.7);/* Fond semi-transparent */
+    display: flex;  /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;    /* Centre verticalement */
 }
-
+/* Contenu de la modale */
 .modal-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond claire pour le contenu de la modale */
-    color: #9191f9; /* Couleur du texte dans le contenu de la modale */
-    padding: 20px; /* Espace intérieur pour le contenu de la modale */
-    border-radius: 10px; /* Coins arrondis pour le contenu de la modale */
+    background-color: #fff; /* Fond blanc */
+    color: #000;    /* Couleur du texte */
+    padding: 20px;      /* Espace intérieur */
+    border-radius: 10px;    /* Coins arrondis */
+    width: 70%; /* Largeur de la modale */
+    max-width: 800px;   /* Largeur maximale */
+    max-height: 90vh;   /* Hauteur maximale */
+    overflow-y: auto;   /* Permet le défilement si le contenu dépasse la hauteur maximale */
+    position: relative; /* Pour positionner le bouton de fermeture */
+}
+/* Bouton de fermeture */
+.close {
+    position: absolute; /* Positionné par rapport à la modale */
+    top: 10px;  /* En haut à droite */
+    right: 15px;    /* À droite de la modale */
+    font-size: 24px;    /* Taille du texte */
+    font-weight: bold;  /* Gras */
+    color: #333;    /* Couleur du texte */
+    cursor: pointer;    /* Curseur pointeur pour indiquer que c'est cliquable */
 }
 
-.close {
-      float: right;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-}
 
 #about img {
     max-width: 100%;

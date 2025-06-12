@@ -88,3 +88,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
+
+.custom-modal{
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour la modale */
+    
+   
+    max-width: 900px; /* Largeur maximale de la modale */
+    margin: auto; /* Centre la modale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour la modale */
+    position: relative; /* Nécessaire pour le positionnement de l'icône de fermeture */
+    top: 50%; /* Positionne la modale au milieu de l'écran */
+    transform: translateY(-50%); /* Centre la modale verticalement */
+    z-index: 1050; /* Assure que la modale est au-dessus des autres éléments */
+    width: 90%; /* Largeur responsive */
+    display : none; 
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond claire pour le contenu de la modale */
+    color: #9191f9; /* Couleur du texte dans le contenu de la modale */
+    padding: 20px; /* Espace intérieur pour le contenu de la modale */
+    border-radius: 10px; /* Coins arrondis pour le contenu de la modale */
+}
+
+.close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+}
