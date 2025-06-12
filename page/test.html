@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projet.css">
+    <link rel="shortcut icon" type="image/png" href="../image/portfolio.png"/>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../image/portfolio.png" width="35", height="35">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../page/school.html">Parcours scolaire</a>
+
+                    <li class="nav-item">      
+                        <a class="nav-link" href="../page/situation_pro.html">Mes Projets</a>
+                       
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- À propos -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2><strong>Zakaria Nessar</strong></h2>
+                <p>Je suis un étudiant passionné en informatique, je suis en BTS SIO option SLAM
+                  J'aspire a devenir un Softwer ingenieur  .</p>
+                  <div class="col-md-2">
+                        <div class="card" style="background-color:rgba(116, 59, 11, 0.3) ;">
+                        <a href="#explications" class="btn btn-outline-light"><strong>Lire la Suite</strong></a>         
+                   <!--<img src="image/veepe.png" class="card-img-top" alt="Projet 2">--> 
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6">
+                <div style="height: 750px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards de mes projets  -->
+
+<section id="explications" class="bg-light py-5" >
+  <div class="container my-4">
+    <div class="row">
+
+      <!-- Premiére card pour GLPI -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <header>
+            <h3 class="card-header">GLPI</h3>
+          </header>
+            <a href="../page/GLPI_projet.html"><img src="../image/glpi.png" class="card-img-top" alt="Projet 1"></a>          
+          <div class="card-body">
+            <h5 class="card-text">GLPI simplifie la gestion informatique. Suivi des actifs, gestion des tickets, inventaires simples. Open-source, convivial, optimisez la productivité dès l'installation.</h5>
+          </div> 
+        </div>
+      </div>
+
+
+      <!-- Deuxiéme card pour Veepee -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <h3 class="card-header">Stage Veepee</h3>
+            <a href="../page/GLPI_projet.html"><img src="../image/veepe.png" class="card-img-top" alt="Projet 2"></a>
+          <div class="card-body">
+            <h5 class="card-text">Lycée Jaques-Brel</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Troisième card pour site touristique Maroc -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <header>
+            <h3 class="card-header">Site touristique Maroc</h3>
+          </header>
+            <a href="../page/GLPI_projet.html"><img src="../image/maroc.jfif" class="card-img-top" alt="Projet 3"></a>
+          <div class="card-body">
+            <h5 class="card-title">Site touristique Maroc</h5>
+            <h5 class="card-text">Découvrez les merveilles du Maroc à travers ce site dédié au tourisme, mettant en avant la culture, la gastronomie et les paysages époustouflants du pays.</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../modal.js"></script>
+</body>
+
+</html>
+    <!-- Contact mettre Linkedin mail
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+           <strong> <h2 style="color: black;" class="text-center">Contactez-moi</h2></strong>
+            <form id="contact-form" action="send-message.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+            </form>
+        </div>
+    </section>-->
