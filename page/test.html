@@ -64,6 +64,11 @@
     <div class="row">
 
       <!-- Premiére card pour GLPI -->
+       <!--l’ouverture (data-bs-toggle="modal")
+            la fermeture (data-bs-dismiss="modal")
+            les animations (fade)
+            le centrage (modal-dialog-centered)
+        -->
       <div class="col-md-4 mb-4">
   <div class="card">
       <h3 class="card-header">GLPI</h3>
@@ -103,13 +108,14 @@
     </div>
   </div>
 
-<!-- Modals à placer TOUT EN BAS DU BODY juste avant </body> -->
+
 <!-- Modal GLPI -->
 <div class="modal fade" id="modalGLPI" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Projet GLPI</h5>
+        <!--Avec Bootstrap tu evite le JS grâce a : "data-bs-dismiss"-->
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
