@@ -1,0 +1,90 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLPI Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="card" id="glpiCard" style="cursor: pointer;">
+    <h3 class="card-header">GLPI</h3>
+    <div class="card-body">
+        <h5 class="card-text">
+            GLPI simplifie la gestion informatique. Suivi des actifs, gestion des tickets, inventaires simples. Open-source, convivial, optimisez la productivité dès l'installation.
+        </h5>
+    </div>
+</div>
+
+<div id="glpiModal" class="custom-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Projet GLPI</h2>
+        <p>GLPI (Gestion Libre de Parc Informatique) est une solution open source permettant de gérer l’ensemble du patrimoine informatique d’une entreprise.</p>
+        <img src="../image/glpi.png" alt="GLPI" style="width: 100%; max-height: 300px; object-fit: cover;">
+    </div>
+</div>
+
+</head>
+</html>
+
+<style>
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+</style>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const glpiCard = document.getElementById('glpiCard');
+    const glpiModal = document.getElementById('glpiModal');
+    const closeBtn = glpiModal.querySelector('.close');
+
+    // Ouvrir la modale
+    glpiCard.addEventListener('click', () => {
+        glpiModal.style.display = 'flex';
+    });
+
+    // Fermer la modale
+    closeBtn.addEventListener('click', () => {
+        glpiModal.style.display = 'none';
+    });
+
+    // Fermer si on clique en dehors du contenu
+    window.addEventListener('click', (event) => {
+        if (event.target === glpiModal) {
+            glpiModal.style.display = 'none';
+        }
+    });
+});
+</script>

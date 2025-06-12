@@ -1,4 +1,4 @@
-  const modal = document.getElementById("modalCard");
+  const modal = document.getElementById("modalGlpi");
   const card = document.getElementById("openCard");
   const closeBtn = document.querySelector(".close");
 
