@@ -79,7 +79,10 @@ footer {
 
 /* Navbar avec fond semi-transparent */
 .custom-navbar {
-    background-color: rgba(0, 0, 0, 0.6); /* fond sombre mais transparent */
+    position: sticky; /* ou fixed */
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Liens de navbar */
