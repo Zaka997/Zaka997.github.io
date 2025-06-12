@@ -65,21 +65,15 @@
 
       <!-- Premiére card pour GLPI -->
       <div class="col-md-4 mb-4">
-        <div class="card" id="glpiCard" style="cursor: pointer;"> 
-            <h3 class="card-header">GLPI</h3>
-          <div class="card-body">
-            <h5 class="card-text">GLPI simplifie la gestion informatique. Suivi des actifs, gestion des tickets, inventaires simples. Open-source, convivial, optimisez la productivité dès l'installation.</h5>
-            <button class="btn btn-outline-light" id="modalGlpi">Voir le Projet</button>
-            <!--Contenu du Modal-->
-            <div class="custom-modal"id="modal-content">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>GLPI</h2>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
+  <div class="card">
+      <h3 class="card-header">GLPI</h3>
+    <img src="../image/glpi.png" class="card-img-top" alt="Projet 1">
+    <div class="card-body">
+      <h5 class="card-text">GLPI simplifie la gestion informatique...</h5>
+      <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalGLPI">En savoir plus</button>
+    </div>
+  </div>
+</div>
 
 
       <!-- Deuxiéme card pour Veepee -->
@@ -108,6 +102,23 @@
         </div>
     </div>
   </div>
+
+<!-- Modals à placer TOUT EN BAS DU BODY juste avant </body> -->
+<!-- Modal GLPI -->
+<div class="modal fade" id="modalGLPI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Projet GLPI</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>GLPI est une application open source de gestion de parc informatique...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 
     <!-- Footer -->
