@@ -24,6 +24,9 @@ body {
 
 /* Navbar avec fond semi-transparent */
 .custom-navbar {
+    position: sticky; /* ou fixed */
+    top: 0;
+    z-index: 1000;
     background-color: rgba(7, 36, 86, 0.2); /* fond sombre mais transparent */
 }
 
