@@ -66,7 +66,7 @@ h2 {
     z-index: 1050;/* Au-dessus de tout le reste */
     left: 0;/* À gauche de l'écran */
     top: 0;/* En haut de l'écran */
-    width: 100vh;/* Prend toute la largeur de l'écran */
+    width: 100vw;/* Prend toute la largeur de l'écran */
     height: 100vh;  /* Prend toute la hauteur de l'écran */
     background-color: rgba(0, 0, 0, 0.7);/* Fond semi-transparent */
     display: flex;  /* Utilise flexbox pour centrer le contenu */
@@ -79,8 +79,8 @@ h2 {
     color: #000;    /* Couleur du texte */
     padding: 20px;      /* Espace intérieur */
     border-radius: 10px;    /* Coins arrondis */
-    width: 850px; /* Largeur de la modale */
-    max-width: 800px;   /* Largeur maximale */
+    width: 70%; /* Largeur de la modale */
+    max-width: 1000px;   /* Largeur maximale */
     max-height: 90vh;   /* Hauteur maximale */
     overflow-y: auto;   /* Permet le défilement si le contenu dépasse la hauteur maximale */
     position: relative; /* Pour positionner le bouton de fermeture */
