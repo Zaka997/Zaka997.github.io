@@ -65,10 +65,10 @@ h2 {
     position: fixed;/* Reste en place */
     z-index: 1050;/* Au-dessus de tout le reste */
     left: 0;/* À gauche de l'écran */
-top: 0;/* En haut de l'écran */
+    top: 0;/* En haut de l'écran */
     width: 100vw;/* Prend toute la largeur de l'écran */
     height: 100vh;  /* Prend toute la hauteur de l'écran */
-background-color: rgba(0, 0, 0, 0.7);/* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.7);/* Fond semi-transparent */
     display: flex;  /* Utilise flexbox pour centrer le contenu */
     justify-content: center; /* Centre horizontalement */
     align-items: center;    /* Centre verticalement */
