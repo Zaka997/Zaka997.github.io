@@ -50,6 +50,8 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/* Style de la section "About" */
 #about {
   background-color: rgba(0, 0, 0, 0.2); /* rend le texte plus lisible sur fond clair */
   height: 100vh;
