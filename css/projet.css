@@ -69,6 +69,11 @@ p{
 h2 {
     color: #f8f3f3;
 }
+
+.typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
 /*C'est le fond du Modal 
 .custom-modal { 
     display: none;Masqué par défaut 
