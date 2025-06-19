@@ -71,8 +71,14 @@ h2 {
 }
 
 .typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f4f4f9;
+    font-size: 24px;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    border-right: 3px solid #f4f4f9; /* Curseur de saisie */
+    width: 0; /* Commence avec une largeur de 0 */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 /*C'est le fond du Modal 
 .custom-modal { 
