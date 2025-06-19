@@ -5,115 +5,44 @@
     <title>GLPI Project</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<div class="card" id="glpiCard" style="cursor: pointer;">
-    <h3 class="card-header">GLPI</h3>
-    <div class="card-body">
-        <h5 class="card-text">
-            GLPI simplifie la gestion informatique. Suivi des actifs, gestion des tickets, inventaires simples. Open-source, convivial, optimisez la productivité dès l'installation.
-        </h5>
-    </div>
+<div class="typewriter">
+  <h1>The cat and the hat.</h1>
 </div>
-
-<div id="glpiModal" class="custom-modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Projet GLPI</h2>
-        <p>GLPI (Gestion Libre de Parc Informatique) est une solution open source permettant de gérer l’ensemble du patrimoine informatique d’une entreprise.</p>
-        <img src="../image/glpi.png" alt="GLPI" style="width: 100%; max-height: 300px; object-fit: cover;">
-    </div>
-</div>
-
 </head>
 </html>
 
 <style>
-.custom-modal {
-    display: none;
-    position: fixed;
-    z-index: 1050;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* GLOBAL STYLES */
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
 }
 
-.modal-content {
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    width: 70%;
-    max-width: 800px;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 </style>
-<script>
-
-document.addEventListener('DOMContentLoaded', function () {
-    const glpiCard = document.getElementById('glpiCard');
-    const glpiModal = document.getElementById('glpiModal');
-    const closeBtn = glpiModal.querySelector('.close');
-
-    // Ouvrir la modale
-    glpiCard.addEventListener('click', () => {
-        glpiModal.style.display = 'flex';
-    });
-
-    // Fermer la modale
-    closeBtn.addEventListener('click', () => {
-        glpiModal.style.display = 'none';
-    });
-
-    // Fermer si on clique en dehors du contenu
-    window.addEventListener('click', (event) => {
-        if (event.target === glpiModal) {
-            glpiModal.style.display = 'none';
-        }
-    });
-});
-</script>
-
-.custom-modal{
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour la modale */
-    
-   
-    max-width: 900px; /* Largeur maximale de la modale */
-    margin: auto; /* Centre la modale */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour la modale */
-    position: relative; /* Nécessaire pour le positionnement de l'icône de fermeture */
-    top: 50%; /* Positionne la modale au milieu de l'écran */
-    transform: translateY(-50%); /* Centre la modale verticalement */
-    z-index: 1050; /* Assure que la modale est au-dessus des autres éléments */
-    width: 90%; /* Largeur responsive */
-    display : none; 
-}
-
-.modal-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond claire pour le contenu de la modale */
-    color: #9191f9; /* Couleur du texte dans le contenu de la modale */
-    padding: 20px; /* Espace intérieur pour le contenu de la modale */
-    border-radius: 10px; /* Coins arrondis pour le contenu de la modale */
-}
-
-.close {
-      float: right;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-}
