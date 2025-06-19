@@ -80,6 +80,15 @@ h2 {
     width: 0; /* Commence avec une largeur de 0 */
     animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
 }
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #f4f4f9; }
+}
+
 /*C'est le fond du Modal 
 .custom-modal { 
     display: none;Masqué par défaut 
