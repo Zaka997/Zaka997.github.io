@@ -89,6 +89,20 @@ h2 {
     50% { border-color: #f4f4f9; }
 }
 
+.cursor {
+  display: inline-block;
+  color: #f4f4f9;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+  font-size: 28px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 /*C'est le fond du Modal 
 .custom-modal { 
     display: none;Masqué par défaut 

@@ -1,17 +1,30 @@
-  const modal = document.getElementById("modalGlpi");
-  const card = document.getElementById("openCard");
-  const closeBtn = document.querySelector(".close");
 
-  card.onclick = function () {
-    modal.style.display = "block";
-  }
+const textElement = document.getElementById("typewriter-text");
+const lines = [
+  "Mes situations professionnelles",
+  "Pendant mon année, j'ai participé à plusieurs projets.",
+  "Les voici :"
+];
+let lineIndex = 0;
+let charIndex = 0;
+let currentLine = '';
+let isDeleting = false;
 
-  closeBtn.onclick = function () {
-    modal.style.display = "none";
-  }
-
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+function typeLine() {
+  if (lineIndex < lines.length) {
+    currentLine = lines[lineIndex];
+    if (charIndex <= currentLine.length) {
+      textElement.innerHTML = currentLine.substring(0, charIndex);
+      charIndex++;
+      setTimeout(typeLine, 50);
+    } else {
+      lineIndex++;
+      charIndex = 0;
+      textElement.innerHTML += "<br>";
+      setTimeout(typeLine, 500); // Pause entre les lignes
     }
   }
+}
+
+window.addEventListener("DOMContentLoaded", typeLine);
+
