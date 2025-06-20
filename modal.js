@@ -1,9 +1,7 @@
 
 const textElement = document.getElementById("typewriter-text");
 const lines = [
-  "Mes situations professionnelles",
-  "Pendant mon année, j'ai participé à plusieurs projets.",
-  "Les voici :"
+  "Pendant mon année, j'ai participé à plusieurs projets les voici :",
 ];
 let lineIndex = 0;
 let charIndex = 0;
