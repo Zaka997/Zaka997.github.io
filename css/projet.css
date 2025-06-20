@@ -75,7 +75,7 @@ h2 {
   color: #f4f4f9;
   font-weight: bold;
   animation: blink 0.8s infinite;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 @keyframes blink {
